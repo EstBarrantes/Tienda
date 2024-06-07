@@ -1,0 +1,94 @@
+/* Este archivo es de estilos....*/
+body{
+    font-family: Playfair;
+   background-color: #EBE1DF;
+}
+
+/* Solo quiero que este en una etiqueta especifica dentro de otra etiqueta
+*/
+aside h1{
+    color: #41160C
+}
+
+
+header,aside,footer,a{
+    color: white;
+} 
+
+.encabezado{
+    position: fixed; /*fijar en pantalla*/
+    background-color:#C08D83;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+}
+.navegacion{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.nav-link{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-menu{
+    line-height:55px;
+    display: flex;
+    margin-right: 50px;
+    list-style: none;
+}
+
+.nav-menu-item{
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+.logo{
+    font-size: 32px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height:88px;/*se centre con respecto a la altura*/
+}
+aside{
+    position: fixed;
+    background-color:#965B4D;
+    padding: 10px;
+    top:100px;
+    left: 0;
+    width: 18.5%;
+    bottom: 20px;
+}
+
+section{
+    background-color: #EBE1DF;
+    overflow-y: scroll;
+    position:fixed;
+    top: 100px;
+    left: 20%;
+    bottom: 20px;
+    width: 80%;
+    padding: 10px;
+}
+footer{
+    position:fixed;
+    background-color: black;
+    text-align: center;
+    left: 0;
+    bottom: 20px;
+    width: 100%;
+    height: 20px;
+}
+
+.nav_menu_link{
+    text-decoration: none;
+    padding: 5px;
+}
+
+
+
+.nav_menu_link:hover{
+    color: #6B3225;
+}
