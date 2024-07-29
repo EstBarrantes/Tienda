@@ -15,10 +15,16 @@ public class Producto implements Serializable{ //Serializable para poder enviar 
     @GeneratedValue(strategy = GenerationType.IDENTITY)//que la base de datos sea la que se encargue de asignar el id 
     @Column(name="id_producto") //Da a notar que el valor de abajo va a representar cierta columna de la tabla
     
-    private long idProducto;
+    private Long idProducto;
+    //private Long idCategoria; no se utiliza más por el QManyToOne
     private String descripcion;
+    private String detalle;
+    private double precio; 
+    private int existencias;
     private String rutaImagen;
     private boolean activo;
     
-    
+    @ManyToOne
+    @JoinColumn(name="id_categoria")
+    private Categoria categoria;
 }
