@@ -10,6 +10,15 @@ public interface ProductoService {
     //de objetos Producto, todos o sólo los activos
     public List<Producto> getProductos(boolean activos);
     
+    //Consulta1 
+    public List<Producto> consulta1(double precioInf, double precioSup);
+    //Consulta2
+    public List<Producto> consulta2(double precioInf, double precioSup);
+    
+    //Consulta3
+    public List<Producto> consulta3(double precioInf, double precioSup);
+    
+    
     //Recuperar el registro de la tabla producto en un objeto Producto
     // si el idProducto existe.. sino devuelve null
     public Producto getProducto(Producto producto);
