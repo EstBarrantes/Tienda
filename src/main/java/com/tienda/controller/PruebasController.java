@@ -99,4 +99,15 @@ public class PruebasController {
         model.addAttribute("precioSup",precioSup);
       return "/pruebas/listado2";  
     }
+    
+    @PostMapping("/consulta4")
+    public String consulta4 (
+            @RequestParam(value="nombreProducto")String nombreProducto,
+            Model model)
+    {
+        var productos=productoService.consulta4(nombreProducto);
+        model.addAttribute("productos",productos);
+        model.addAttribute("nombreProducto",nombreProducto);
+      return "/pruebas/listado2";  
+    }
 }

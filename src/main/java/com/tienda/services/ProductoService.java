@@ -18,6 +18,9 @@ public interface ProductoService {
     //Consulta3
     public List<Producto> consulta3(double precioInf, double precioSup);
     
+    //Consulta4
+    public List<Producto> consulta4(String nombreProducto);
+    
     
     //Recuperar el registro de la tabla producto en un objeto Producto
     // si el idProducto existe.. sino devuelve null

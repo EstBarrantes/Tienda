@@ -57,4 +57,10 @@ public class ProductoServiceImpl implements ProductoService{
     public List<Producto> consulta3(double precioInf, double precioSup) {
         return productoDao.consultaSQL(precioInf, precioSup);
     }
+    
+    @Override
+    @Transactional (readOnly=true)
+    public List<Producto> consulta4(String nombreProducto) {
+        return productoDao.consulta4(nombreProducto);
+    }
 }

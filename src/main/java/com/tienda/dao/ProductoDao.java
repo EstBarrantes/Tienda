@@ -23,6 +23,10 @@ public interface ProductoDao extends JpaRepository<Producto,Long>{
             value="SELECT * FROM producto a WHERE a.precio BETWEEN :precioInf AND :precioSup ORDER BY a.descripcion ASC")
     public List<Producto> consultaSQL (double precioInf, double precioSup);
     
+    //Una consulta mediante SLQ se refiere a la tabla
+    @Query(nativeQuery=true,
+            value="SELECT * FROM producto a WHERE a.descripcion LIKE :nombreProducto ORDER BY a.descripcion ASC")
+    public List<Producto> consulta4 (String nombreProducto);
     
-    
+  
 }
